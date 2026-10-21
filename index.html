@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raúl Pérez Veres · Desarrollador web</title>
+<meta name="description" content="Portfolio de Raúl Pérez Veres, desarrollador web y estudiante de DAM. Proyectos, tecnologías y contacto.">
+<link rel="canonical" href="https://reidas06.github.io/">
+<meta name="theme-color" content="#2F5BFF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raúl Pérez Veres · Desarrollador web">
+<meta property="og:description" content="Proyectos, tecnologías y contacto.">
+<meta property="og:url" content="https://reidas06.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👋%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Raúl Pérez Veres","email":"perezveresraul@gmail.com","url":"https://reidas06.github.io/","jobTitle":"Desarrollador web","sameAs":["https://github.com/Reidas06","https://www.linkedin.com/in/ra%C3%BAl-p%C3%A9rez-veres-a1559434a/"]}
+</script>
+<style>
+:root{
+  --bg:#F2F4F8;--surface:#fff;--ink:#101828;--muted:#566074;--line:#D9DEE8;--accent:#2F5BFF;--on-accent:#fff;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1320;--surface:#151B2C;--ink:#E8ECF4;--muted:#9AA6BD;--line:#263049;--accent:#7C9BFF;--on-accent:#0E1320;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0E1320;--surface:#151B2C;--ink:#E8ECF4;--muted:#9AA6BD;--line:#263049;--accent:#7C9BFF;--on-accent:#0E1320;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--font);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--accent);color:var(--on-accent);padding:.5rem 1rem;border-radius:6px;z-index:9}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+nav ul{display:flex;gap:1.5rem;list-style:none;padding:0;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.35rem .9rem;font:inherit;font-size:.9rem;cursor:pointer}
+#theme:hover{border-color:var(--accent)}
+.hero{padding:clamp(3rem,10vw,7rem) 0 clamp(3rem,8vw,5rem)}
+.hero h1{font-size:clamp(3rem,13vw,8.5rem);line-height:.92;letter-spacing:-.045em;font-weight:800;max-width:11ch;animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.hero p{max-width:34rem;margin-top:1.75rem;font-size:1.25rem;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.8rem 1.4rem;border-radius:10px;border:1px solid var(--line);transition:border-color .15s,background .15s}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.btn:hover{border-color:var(--accent)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:1.75rem;letter-spacing:-.02em;margin-bottom:1.75rem}
+.about{display:grid;gap:1.5rem;max-width:40rem;color:var(--muted)}
+.about strong{color:var(--ink)}
+.projects{list-style:none;padding:0}
+.project{display:grid;grid-template-columns:1fr auto;gap:.25rem 1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.project:first-child{padding-top:0}
+.project h3{font-size:1.4rem;letter-spacing:-.015em}
+.project h3 a{text-decoration:none}
+.project h3 a:hover{color:var(--accent)}
+.project p{grid-column:1;color:var(--muted);max-width:38rem}
+.tags{grid-column:1;display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin-top:.5rem}
+.tags li{font-size:.85rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.1rem .7rem}
+.links{grid-column:2;grid-row:1/3;align-self:start;display:flex;gap:1rem;font-size:.95rem;font-weight:600}
+.links a{color:var(--accent)}
+.timeline{list-style:none;padding:0;border-left:2px solid var(--line)}
+.timeline li{padding:0 0 1.75rem 1.5rem;position:relative}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-.4rem;top:.5rem;width:.75rem;height:.75rem;border-radius:50%;background:var(--accent)}
+.timeline h3{font-size:1.1rem}
+.timeline p,.timeline time{color:var(--muted);font-size:.98rem}
+.more{color:var(--muted);margin-top:1.5rem}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.5rem}
+.stack h3{font-size:1rem;margin-bottom:.4rem}
+.stack p{color:var(--muted);font-size:1rem}
+.contact p{max-width:34rem;color:var(--muted);margin-bottom:1.5rem}
+footer{padding:2.5rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:40rem){nav{display:none}.project{grid-template-columns:1fr}.links{grid-column:1;grid-row:auto;margin-top:.5rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="wrap">
+  <header class="top">
+    <nav aria-label="Principal"><ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#trayectoria">Trayectoria</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#tecnologias">Tecnologías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul></nav>
+    <button id="theme" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
+  </header>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <div class="hero">
+      <h1>Raúl Pérez Veres</h1>
+      <p>Desarrollador web y estudiante de DAM. Me motiva aprender, construir cosas útiles y ganar experiencia en un entorno real.</p>
+      <div class="cta">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="mailto:perezveresraul@gmail.com">Escríbeme</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre-mi"><div class="wrap">
+    <h2>Sobre mí</h2>
+    <div class="about">
+      <p><strong>Soy estudiante de Desarrollo de Aplicaciones Multiplataforma y desarrollador web.</strong> Me interesa la programación y las nuevas tecnologías, y quiero seguir desarrollándome profesionalmente en ese ámbito.</p>
+      <p>Soy responsable, tengo iniciativa y aprendo rápido. Me gusta trabajar en equipo, organizarme bien y resolver problemas hasta dar con la solución. Busco una oportunidad para ganar experiencia en un entorno real.</p>
+    </div>
+  </div></section>
+
+  <section id="trayectoria"><div class="wrap">
+    <h2>Trayectoria</h2>
+    <ul class="timeline">
+      <li><h3>Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3><p>CPR Plurilingüe Liceo La Paz</p><time>Desde septiembre de 2026</time></li>
+      <li><h3>Administrador de contenidos web (prácticas FCT)</h3><p>Creación y modificación de contenidos web con WordPress, trabajando en equipo.</p><time>Marzo – junio de 2026</time></li>
+      <li><h3>Ciclo Superior en Desarrollo de Aplicaciones Web (DAW)</h3><p>Centro de Formación Profesional Afundación, A Coruña</p><time>Septiembre de 2024 – junio de 2026</time></li>
+    </ul>
+  </div></section>
+
+  <section id="proyectos"><div class="wrap">
+    <h2>Proyectos</h2>
+    <ul class="projects">
+      <li class="project">
+        <h3><a href="https://github.com/Reidas06/Prototipo-Doces-Mecos">Doces &amp; Mecos</a></h3>
+        <p>Tienda online de dulces artesanales, proyecto intermodular de 2º DAW. Incluye registro e inicio de sesión, carrito con pedidos guardados en base de datos, buzón de contacto, panel de administración y una web disponible en castellano y gallego.</p>
+        <ul class="tags"><li>Python</li><li>Django</li><li>Django REST Framework</li><li>JavaScript</li><li>SQLite</li></ul>
+        <div class="links"><a href="https://github.com/Reidas06/Prototipo-Doces-Mecos">Código</a></div>
+      </li>
+    </ul>
+    <p class="more">Tengo más proyectos en desarrollo que publicaré aquí.</p>
+  </div></section>
+
+  <section id="tecnologias"><div class="wrap">
+    <h2>Tecnologías</h2>
+    <div class="stack">
+      <div><h3>Web</h3><p>HTML, CSS, JavaScript, WordPress</p></div>
+      <div><h3>Backend y datos</h3><p>Python, Django, MySQL</p></div>
+      <div><h3>Apps multiplataforma</h3><p>Java, JavaFX, React Native</p></div>
+      <div><h3>Herramientas</h3><p>Git y GitHub</p></div>
+    </div>
+  </div></section>
+
+  <section id="contacto" class="contact"><div class="wrap">
+    <h2>Contacto</h2>
+    <p>¿Tienes unas prácticas, una oferta o un proyecto en mente? Escríbeme y te respondo lo antes posible.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:perezveresraul@gmail.com">perezveresraul@gmail.com</a>
+      <a class="btn" href="https://github.com/Reidas06" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/ra%C3%BAl-p%C3%A9rez-veres-a1559434a/" rel="noopener">LinkedIn</a>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap">© <span id="y">2026</span> Raúl Pérez Veres</div></footer>
+
+<script>
+(function(){
+  var r=document.documentElement,b=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)r.dataset.theme=s}catch(e){}
+  b.addEventListener('click',function(){
+    var dark=r.dataset.theme==='dark'||(r.dataset.theme==='auto'&&matchMedia('(prefers-color-scheme:dark)').matches);
+    var n=dark?'light':'dark';r.dataset.theme=n;
+    try{localStorage.setItem('theme',n)}catch(e){}
+  });
+  document.getElementById('y').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
